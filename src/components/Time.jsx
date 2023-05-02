@@ -29,20 +29,6 @@ const Time = () => {
       id === "15minute" && navigate("/details/15minute");
     }
   };
-  // console.log(selectedItem);
-  function convertTo12HrFormat(times) {
-    const result = [];
-    for (let i = 0; i < times.length; i++) {
-      const time = times[i];
-      const [hour, minute] = time.split(":");
-      let formattedHour = hour % 12 || 12;
-      const formattedTime = `${formattedHour}:${minute} ${
-        hour >= 12 ? "PM" : "AM"
-      }`;
-      result.push(formattedTime);
-    }
-    return result;
-  }
 
   const hour = useSelector((state) => state.DateSlice.hour);
   useEffect(() => {
