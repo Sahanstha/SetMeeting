@@ -16,13 +16,13 @@ const Submit = () => {
         <p> Your Meeting has been Scheduled.</p>
         <br />
         <p className="mb-8">Details</p>
-        <p className="">Date: {date}</p>
-        <p className=""> Scheduled Time: {time}</p>
-        <p className="">Location: {location}</p>
-        <p className="">Username: {username}</p>
-        <p className="">Email: {email}</p>
-        <p className="">Guest Email: {guest}</p>
-        <p className="">Additional Note: {addnote}</p>
+        <p>Date: {date}</p>
+        <p> Scheduled Time: {time}</p>
+        <p>Location: {location}</p>
+        <p>Username: {username}</p>
+        <p>Email: {email}</p>
+        <p>Guest Email: {guest}</p>
+        <p>Additional Note: {addnote}</p>
       </div>
       <p>
         Click
